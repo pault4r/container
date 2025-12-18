@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build image
-      run: docker build . --file Dockerfile --tag image .
+      run: docker build --tag image .
 
     - name: Save image
       run: docker save image -o image.tar
