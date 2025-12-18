@@ -18,7 +18,7 @@ jobs:
       run: docker save image -o image.tar
 
     - name: Upload
-      run: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
         name: image
         path: image.tar
